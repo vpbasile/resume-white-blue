@@ -1,0 +1,126 @@
+
+/* +++++++ */
+/* Overrides for specific things */
+/* +++++++ */
+
+#skills {
+text-align: justify;
+}
+
+.skill {
+padding: 1%;
+margin: 4px;
+}
+
+#summary {
+text-align: center;
+}
+
+h2.headLine {
+text-align: center; 
+text-transform: capitalize;
+color: var(--accent1);
+font-size: 1.09rem;
+margin-left: 10px;
+margin-right: 10px;
+margin-top: revert;
+}
+
+.competency {
+    padding: 4px 24px 6px 12px;
+    font-size: 20px;
+    margin: 10px;
+}
+
+#experience-label {padding:10px;}
+
+div#experience > div > ul {
+    list-style-type: square;
+    border-left: 2px solid var(--accent2);
+    color: var(--text-primary);
+    margin-top: 0%;
+    margin-bottom: 10px;
+}
+
+ul ul {
+    color: var(--text-primary);
+    list-style-type: disc;
+    border-left: initial;
+}
+
+div.job{
+margin: 2% 0%;
+}
+
+.where {
+    margin-bottom: 0%;
+    margin-top: 1%;
+    color: var(--duo-ocean-light);
+    color: var(--duo-blue-dark);
+    border-bottom: 2px solid var(--accent2);
+}
+
+
+#education-left {
+    float: left;
+    width: 18%;
+    }
+    
+    #education-center {
+    width:60%;
+    }
+    
+    #education-right {
+    float:right;
+    width:18%;
+    }
+
+div.edu-item {
+    margin: 8px 0px 5px;
+    /* border-radius: 5px;
+    border: 2px solid var(--gray);
+    border-bottom-width: 4px;     */
+    padding: 1% 5%;
+    font-size-adjust: 0.4;
+    display: inline-block;
+    width: 90%;
+}
+
+h3.degree {
+    margin: 0px;
+}
+
+.school {
+    margin: 0px;
+    padding:0px;
+    text-align: right;
+    color:var(--duo-purple-dark);
+}
+
+#skill-label {margin-top: 20px;}
+
+
+/* ===================== */
+
+/* h5.when {
+    margin-top: 2%;
+    text-align: left;
+    padding-left: 7%;
+} */
+
+/* .what {
+    margin-bottom: 0%;
+    margin-top: 1%;
+    padding-left: 7%;
+} */
+
+/* h4.what { font-size: 0.8em;}
+h5.when { font-size: 0.8em;}
+
+.when {
+    color:var(--text-primary);
+    text-align: right;
+    font-size: 1em;
+    margin-top: 0px;
+    display:inline-block;
+} */

@@ -1,0 +1,253 @@
+/*Defining color variables*/
+
+/* light theme colors */
+html{
+    --background-color: white;
+    --unaccent: rgba(0,0,0,0.2);
+    --text-primary:#4b4b4b;   /* Ratio to background-color: ___:1  */
+    --clash:hsl(37, 100%, 50%);
+    --gray: rgb(229,229,229);
+}
+
+
+/* +++++++ */
+/* Structural things */
+/* +++++++ */
+
+body {
+    /* Stuff to make it printable */
+    width: 7.5in;
+    padding:0.25in;
+    margin: auto;
+
+}
+
+/* Stuff that shouldn't print */
+@media print {
+
+    .no-print {
+        display: none;
+    }
+}  
+
+/* Straight up not there */
+.no-show {display:none;}
+
+@media screen and (max-width:8.5in) {
+    body {
+        width: auto;
+        padding: 2%;
+    }
+
+    .left-col {
+        width: 100%;
+    }
+
+    .right-col {
+        width: 100%;
+    }
+
+    h1 {
+        font-size:inherit;
+    }
+}
+
+@font-face {font-family: "din-round"; src: url(""); }
+       
+body{
+    background-color: var(--background-color);
+    color: var(--text-primary);
+    /* Setting base font properties */
+    font-size: 9pt;
+   font-family: monospace;
+   
+}
+
+.full-width {
+    width:100%;
+    clear:both;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float:left;
+}
+
+.icon { 
+    border-radius: 5px;
+    display: none;
+    visibility: hidden;
+}
+
+.large {
+    width: 0.25in; 
+    padding:3px;
+}
+
+.small {
+    width: 25px; 
+    padding:5px;
+}
+
+.tiny {
+    width:10px;
+    padding: 0px 10px 0px 10px;
+}
+
+/* +++++++ */
+/* Utility */
+/* +++++++ */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+span.title {font-style: italic;}
+
+.bolded {
+  font-weight: bold;
+  color:var(--duo-ocean-dark);
+}
+
+.callout {
+  display: inline-block;
+  padding:0px 10px 0px 10px;
+  text-indent: 0px;
+}
+a.callout { text-decoration: none;}
+.callout.full-sentence { margin-right: 5px; }
+
+.pad { padding:1%; }
+.pad3 {padding:15px;}
+#page-breaker {page-break-before:always;}
+.inline { display: inline-block; }
+.red-border { border:2px solid red !important; }
+.justified {text-align: justify ;}
+.nocolor { color: var(--text-primary);}
+
+
+span.draft::before {content: "[ ";}
+span.draft {
+    color:var(--unaccent);
+    font-weight: bold;
+    background-color:  rgb(255, 157, 0,0.5);
+}
+span.draft::after {content: " ]";}
+
+/* +++++++ */
+/* Shape */
+/* +++++++ */
+
+.round {
+    border-radius: 8px;
+    border-bottom:5px solid white;
+    display: inline-block;
+}
+
+/* +++++++ */
+/* Specific Sections */
+/* +++++++ */
+
+#header {width: 100%;}
+#header > div.left-col {max-width: 50%; float: left;}
+#header > div.right-col {max-width: 40%; float: right;}
+
+.nt {color:var(--duo-blue-light);}
+
+.contact-info {
+    text-align: right;
+}
+
+.contact-info h2 {
+    border-bottom:none;
+    font-size: 1.25em;
+}
+    
+    /* .contact-info a { color:white; } */
+    
+div#links{
+    position:absolute;
+    top:20px;
+    right:0px;
+}
+
+/*Text and Headers */
+
+div#drawing {display: none;}
+
+/* a {color:white;}   */
+/* hr {color: var(--unaccent);} */
+
+h1 {
+    font-size: 2rem;
+    margin: 2% 0% 2% 0%;
+    letter-spacing: initial;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-size: 1.09rem;
+    line-height: 1;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h3 {
+    font-size: 1.5em;
+    color:var(--duo-ocean-dark);
+}
+
+h4 {
+    color:var(--duo-ocean-light);
+    margin: 0%;
+}
+
+h5 {margin-bottom: 3%;}
+
+td {
+    vertical-align: bottom;
+    text-align: center;
+}
+
+p {
+    text-indent: 2em;
+    margin-top: 5px;
+}
+p.narrow-line { line-height: 18px; }
+p.wide-line { line-height: 22px; }
+
+li {list-style-type: disc;}
+
+/* +++++++ */
+/* Color */
+/* +++++++ */
+/* 
+.blue {
+    background-color: var(--duo-blue-light);
+    border-color: var(--duo-blue-dark);
+    color: white !important;
+}
+
+.gold {
+    background-color: var(--duo-gold-light);
+    background-image: linear-gradient(to bottom right,hsl(47, 75%, 50%), hsl(51, 99%, 60%),  hsl(47, 75%, 50%));   
+    border-color: var(--duo-gold-dark);
+    color: var(--duo-gold-text) !important;
+}
+
+.red {
+    background-color: rgb(255,76,75);
+    border-color: rgb(201,57,58);
+    color: white !important;
+}
+
+.purple {
+    background-color: var(--duo-purple-light);
+    border-color: var(--duo-purple-dark);
+    color:white !important;
+} */
