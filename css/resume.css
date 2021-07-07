@@ -353,14 +353,3 @@ h3.degree {
     border-radius: 9px;
     padding: 9px;
   }
-  
-
-/* .skill::before {
-    content: "  | ";
-    color:var(--accent1);
-}
-
-.skill::after {  
-    content: " |  ";
-    color:var(--accent2);
-} */
